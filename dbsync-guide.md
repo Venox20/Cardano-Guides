@@ -92,7 +92,7 @@ PGPASSFILE=config/pgpass-mainnet db-sync-node/bin/cardano-db-sync \
     --schema-dir schema/
 ```
 
-### Cardano-CLI Modification
+### Cardano-cli Modification
 
 DBsync does not need Cardano-cli but if you would like to have it you can compile or get it the way you normally do.
 
