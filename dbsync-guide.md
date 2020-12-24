@@ -98,4 +98,4 @@ DBsync does not need Cardano-cli but if you would like to have it you can compil
 
 Change your Cardano Node Socket in .bashrc
 
-```export CARDANO_NODE_SOCKET_PATH=/home/njd/cardano-node/state-node-mainnet/node.socket```
+```export CARDANO_NODE_SOCKET_PATH=/home/<user name>/cardano-node/state-node-mainnet/node.socket```
