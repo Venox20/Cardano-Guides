@@ -91,3 +91,11 @@ PGPASSFILE=config/pgpass-mainnet db-sync-node/bin/cardano-db-sync \
     --state-dir ledger-state/mainnet \
     --schema-dir schema/
 ```
+
+### Cardano-CLI Modification
+
+DBsync does not need Cardano-cli but if you would like to have it you can compile or get it the way you normally do.
+
+Change your Cardano Node Socket in .bashrc
+
+```export CARDANO_NODE_SOCKET_PATH=/home/njd/cardano-node/state-node-mainnet/node.socket```
