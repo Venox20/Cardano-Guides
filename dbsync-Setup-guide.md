@@ -27,7 +27,7 @@ trusted-public-keys = iohk.cachix.org-1:DpRUyj7h7V830dp/i6Nti+NEO2/nhblbov/8MW7R
 EOF
 ```
 
-### Install git and other dependencies before cloning cardano-node
+### Install git and postgresql
 `sudo apt install git postgresql postgresql-contrib -y`
 
 ### Install Cardano-node with NIX Package Manager
