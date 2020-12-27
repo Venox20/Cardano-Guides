@@ -25,3 +25,6 @@ You should see a database name with cexplorer with the Owner being your username
 
 ### Display details of a particular table
 ```\d+ <tablename>```
+
+### Getting Started with PostgreSQL
+[Getting Started PSQL](https://www3.ntu.edu.sg/home/ehchua/programming/sql/PostgreSQL_GetStarted.html)
