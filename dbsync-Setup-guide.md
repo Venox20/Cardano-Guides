@@ -1,8 +1,17 @@
+### secure ssh access (taken from newb guide)
+[cardano-node-guide/securing-ssh-access.md at master · Chris-Graffagnino/cardano-node-guide · GitHub](https://github.com/Chris-Graffagnino/cardano-node-guide/blob/master/docs/securing-ssh-access.md)
+
+### Make non-root user with sudo access (nix install can't be installed as root)
+`useradd -c “<SOME COMMENT HERE>” -m -d /home/<YOUR_ADMIN_USER> -s /bin/bash -G sudo,ssh-users <YOUR_ADMIN_USER>`
+
+### Switch to non-root user
+`su - <NON-ROOT USER>`
+
+
 ### Install NIX Package Manager
 
-```curl -L https://nixos.org/nix/install > install-nix.sh```
+`curl -L https://nixos.org/nix/install | sh`
 
-```./install-nix.sh```
 
 ### Setup IOHK Binary Cache
 
