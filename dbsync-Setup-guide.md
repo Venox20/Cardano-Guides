@@ -1,4 +1,4 @@
-### secure ssh access (taken from newb guide)
+### Secure SSH Access (taken from newb guide)
 [cardano-node-guide/securing-ssh-access.md at master · Chris-Graffagnino/cardano-node-guide · GitHub](https://github.com/Chris-Graffagnino/cardano-node-guide/blob/master/docs/securing-ssh-access.md)
 
 ### Make non-root user with sudo access (nix install can't be installed as root)
