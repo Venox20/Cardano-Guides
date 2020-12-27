@@ -27,9 +27,11 @@ trusted-public-keys = iohk.cachix.org-1:DpRUyj7h7V830dp/i6Nti+NEO2/nhblbov/8MW7R
 EOF
 ```
 
+### Install git and other dependencies before cloning cardano-node
+`sudo apt install git postgresql postgresql-contrib -y`
 
 ### Install Cardano-node with NIX Package Manager
-
+`cd` to home directory
 
 ```git clone https://github.com/input-output-hk/cardano-node```
 
@@ -37,7 +39,9 @@ EOF
 
 ```nix-build -A scripts.mainnet.node -o mainnet-node-local```
 
+
 ### Install dbsync with NIX Package Manager
+`cd` to home directory
 
 ```git clone https://github.com/input-output-hk/cardano-db-sync```
 
@@ -45,17 +49,20 @@ EOF
 
 ```nix-build -A cardano-db-sync -o db-sync-node```
 
-### Install PostgreSQL
-
-```sudo apt update```
-
-```sudo apt install postgresql postgresql-contrib```
 
 ### Set up PostgreSQL user
 
 ```whoami```
 
 ```sudo -u postgres psql```
+
+You will now be in the psql shell.  
+
+Take note of the two types of commands
+1. psql - such as \c, \l, \dt.
+2. SQL - such as CREATE DATABASE, CREATE TABLE and SELECT
+
+Make sure to end all SQL commands with a semi-colon.
 
 ```CREATE USER <enter output of whoami>;```
 
@@ -88,6 +95,7 @@ Change file permission on
 
 
 ### Setup dbsync
+`cd ~/cardano-db-sync`
 
 ```PGPASSFILE=config/pgpass-mainnet scripts/postgresql-setup.sh --createdb```
 
