@@ -8,7 +8,7 @@ or
 
 ```\l+``` for more detail  ```q``` to quit
 
-You should see a database name with cexplorer with the Owner being your username.  If not [dbsync-Setup-guide](https://github.com/Venox20/Cardano-Guides/blob/main/dbsync-Setup-guide.md)
+You should see a database name with cexplorer with the Owner being your username.  If not see [dbsync-Setup-guide](https://github.com/Venox20/Cardano-Guides/blob/main/dbsync-Setup-guide.md)
 
 ```\q``` to quit and exit back to terminal.
 
