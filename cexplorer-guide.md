@@ -28,3 +28,6 @@ You should see a database name with cexplorer with the Owner being your username
 
 ### Getting Started with PostgreSQL
 [Getting Started PSQL](https://www3.ntu.edu.sg/home/ehchua/programming/sql/PostgreSQL_GetStarted.html)
+
+### Video to understand inner join
+[Inner Join Video](https://www.youtube.com/watch?v=a-xlrdG-fpY&t)
