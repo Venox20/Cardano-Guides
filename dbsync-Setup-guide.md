@@ -109,7 +109,7 @@ PGPASSFILE=config/pgpass-mainnet db-sync-node/bin/cardano-db-sync \
     --schema-dir schema/
 ```
 
-### You Can Rebuild the DB if needed by
+### You Can Rebuild the DB if needed
 
 ```
 PGPASSFILE=config/pgpass-mainnet scripts/postgresql-setup.sh --recreatedb
