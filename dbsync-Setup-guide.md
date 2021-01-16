@@ -109,6 +109,18 @@ PGPASSFILE=config/pgpass-mainnet db-sync-node/bin/cardano-db-sync \
     --schema-dir schema/
 ```
 
+### You Can Rebuild the DB if needed by
+
+```
+PGPASSFILE=config/pgpass-mainnet scripts/postgresql-setup.sh --recreatedb
+
+PGPASSFILE=config/pgpass-mainnet db-sync-node/bin/cardano-db-sync \
+    --config config/mainnet-config.yaml \
+    --socket-path ../cardano-node/state-node-mainnet/node.socket \
+    --state-dir ledger-state/mainnet \
+    --schema-dir schema/
+  ```
+
 ### Cardano-cli Modification
 
 DBsync does not need Cardano-cli but if you would like to have it you can compile or get it the way you normally do.
