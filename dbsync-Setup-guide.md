@@ -113,7 +113,9 @@ PGPASSFILE=config/pgpass-mainnet db-sync-node/bin/cardano-db-sync \
 
 ```
 PGPASSFILE=config/pgpass-mainnet scripts/postgresql-setup.sh --recreatedb
+```
 
+```
 PGPASSFILE=config/pgpass-mainnet db-sync-node/bin/cardano-db-sync \
     --config config/mainnet-config.yaml \
     --socket-path ../cardano-node/state-node-mainnet/node.socket \
